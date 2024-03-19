@@ -1,0 +1,7 @@
+{% block content%}
+  {% for page in page_obj %}
+     {% if student.is_paid%}
+     Группа студентов на курс {{ student.product.name }}:
+      {{ student.first_name }} {{ student.last_name }} - с {{ student.start_product.date_is_start }}
+  {% endfor %}
+{% endblock%}
